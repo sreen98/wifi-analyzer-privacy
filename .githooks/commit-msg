@@ -1,0 +1,11 @@
+#!/bin/sh
+# Blocks commit messages that mention Claude / Anthropic
+# (e.g. "Co-Authored-By: Claude ...", "Generated with Claude Code", noreply@anthropic.com).
+# Lines starting with '#' are git's own comments and are ignored.
+hits=$(grep -v '^#' "$1" | grep -Ein 'claude|anthropic')
+if [ -n "$hits" ]; then
+    echo "commit-msg: commit messages must not mention Claude or Anthropic. Remove:" >&2
+    printf '%s\n' "$hits" >&2
+    exit 1
+fi
+exit 0

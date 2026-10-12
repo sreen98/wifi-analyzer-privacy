@@ -1,0 +1,10 @@
+#!/bin/sh
+# Blocks commits whose author or committer identity is Claude / Anthropic.
+for who in GIT_AUTHOR_IDENT GIT_COMMITTER_IDENT; do
+    ident=$(git var "$who")
+    if printf '%s' "$ident" | grep -Eiq 'claude|anthropic'; then
+        echo "pre-commit: $who is '$ident'. Commits must use your own identity, not Claude/Anthropic." >&2
+        exit 1
+    fi
+done
+exit 0
