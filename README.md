@@ -1,4 +1,4 @@
-# Honest WiFi — privacy policy site
+# Signalwise — privacy policy site
 
 Source for the GitHub Pages site that hosts the app's privacy policy:
 https://sreen98.github.io/wifi-analyzer-privacy/

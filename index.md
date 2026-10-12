@@ -1,12 +1,12 @@
 ---
-title: Honest WiFi — Privacy Policy
+title: Signalwise — Privacy Policy
 ---
 
-# Honest WiFi — Privacy Policy
+# Signalwise — Privacy Policy
 
 _Effective 12 October 2026._
 
-Honest WiFi is a Wi-Fi analyzer made by Sreenath P. It has no ads, no analytics, no
+Signalwise is a Wi-Fi analyzer made by Sreenath P. It has no ads, no analytics, no
 accounts and no tracking. **We (the developer) never receive any data from the app.**
 
 ## What stays on your phone
@@ -27,7 +27,7 @@ The app connects to the internet only when you tap **Start speed test**. The tes
 
 - Your phone connects to the nearest M-Lab server, which M-Lab chooses from your IP address.
 - M-Lab receives your **IP address** and the **test measurements** (speeds, latency, connection
-  details). The app also tells M-Lab its name and version (`honest-wifi-android`, version number).
+  details). The app also tells M-Lab its name and version (`signalwise-android`, version number).
 - **M-Lab publishes all test data, including IP addresses, as open data** for research.
   See [M-Lab's privacy policy](https://www.measurementlab.net/privacy/).
 - The app does not send M-Lab your Wi-Fi name, location, device identifiers or anything else.
